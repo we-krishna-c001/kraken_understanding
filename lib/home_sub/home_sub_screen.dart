@@ -18,13 +18,7 @@ class _HomeSubScreenState extends State<HomeSubScreen> {
         ),),
         backgroundColor: Colors.blueAccent,
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Text("Home Sub Screen")
-          ],
-        ),
-      ),
+      body: Center(child: Text("Home Sub Screen")),
     );
   }
 }

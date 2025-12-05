@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class HomeSubScreen extends StatefulWidget {
+  const HomeSubScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeSubScreen> createState() => _HomeSubScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeSubScreenState extends State<HomeSubScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Home Screen", style: TextStyle(
+        title: Text("Home Sub Screen", style: TextStyle(
           color: Colors.white
         ),),
         backgroundColor: Colors.blueAccent,
@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Text("Home screen")
+            Text("Home Sub Screen")
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kraken_understanding/home_sub/home_sub_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -18,10 +19,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),),
         backgroundColor: Colors.blueAccent,
       ),
-      body: SingleChildScrollView(
+      body: Center(
         child: Column(
+          mainAxisAlignment: .center,
+          crossAxisAlignment: .center,
           children: [
-            Text("Home screen")
+            Text("Home screen"),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeSubScreen()));
+            }, child: Text("Navigate to next screen"))
           ],
         ),
       ),
